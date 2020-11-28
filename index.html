@@ -9,7 +9,7 @@
 </head>
 
 <body>
-        <header >
+        <header>
             <nav class="navigation">
                <a class="naviagation__link naviagation__link-homepage" href="nauka-html.html">Nauka html</a> 
                <a class="naviagation__link" href="index.html">Index html</a> 
@@ -22,12 +22,15 @@
             <h1 class="main-heading main-heading--js" id="top">Pierwszy projekt na kursie WTF</h1>
         </header >
       
-        <section>
-
+        <h4 class="extra-element extra-element--js">Kolejny element</h4>
+      
+        <section >
+            <h2 id="second" class="week-summary__heading week-summary__heading--second">Jakby tu kreatywnie zacząć....</h2>
             <article class="week-summary week-summary--special">
+                <h3> Tydzień 4 </h3>
             <img src="cloud.png" alt="cloud" width="280">
             <img src="snowflake.png" alt="snowflake" width="310" height="210">
-            <h2 id="second" class="week-summary__heading week-summary__heading--second">Jakby tu kreatywnie zacząć....</h2>
+           
             <p class="week-summary__description">Po moich kilku (dziwnych) próbach nauczenia się HTML-a i CSS-a zaczynam od nowa.
                 Myślę, że wiedza, którą posiadałam przed zakupem tego kursu się nieco przydaje, ale nie ukrywam, że jest
                 wiele praktycznych wskazówek,
@@ -40,12 +43,12 @@
             </p>
             <p>Wprawadzam zmianę w ramach gita- znowu :)</p>
             <p>Co nieco o nazewnictwie:
-                <ul>
+                <!-- <ul>
                     <li>camelCase</li>
                     <li>kebab-case</li>
                     <li>snake_case</li>
                     <li>PascalCase</li>
-                </ul>
+                </ul> -->
             </p>
             <p> Nauczyłam się dzisiaj nieco o gicie i githubie. By założyć nowy projekt w gicie należy użyć git init.
                 Kolejne  komendy to git config --global user.name"Imie i nazwisko" oraz git config --global user.email adress.
@@ -53,15 +56,26 @@
                 gitk. Git push wypycha na serwer
                 Natomiast github tworzy nowe repozytorium i można powiedzieć, że pozwala gromadzić pliki i śledzić wprowadzane zmiany.
                 Oprócz tego było nieco więcej o samym divach (nie mają znaczenia semantycznego), displayach, width i height, overflow czy jednostkach.
+                Jeśli chodzi o stylizacje strony to przerobiony został box model  czyli padding border i margin, box sizing, który definiuje wartości wymiarów elementów
+                a także position i z -index oraz dowiedziałam się, że float nie tylko służy do ułożenia elementu względem ekranu na danej stronie ale bardziej do tego,
+                aby zawarty na stronie tekst opływał go z właściwej strony.
+                Poznałam dzisiaj równiej podstawowe zmienne w js(const, let, var) oraz typy proste (string,number,Bigint, boolean,null i undefined).
+                let jest zmienna a const stała.
+                Immutability- oznacza, że nie możemy zmieniać wart prostych w js tylko połączenia między nimi.
+                ip config- sprawdza adres ip w terminalu.
+                BEM- są to logiczne klasy 
+                DOM- Document Object Model czyli złożony w przeglądarce HTML.
+
             </p>
             </article>
             </section>
 
         <section>
             
-           
+           <h2 id="third" class="week-summary__heading week-summary__heading--third">To czego się dzisiaj nauczyłam...</h2>
             <article class="week-summary">
-                 <h2 id="third" class="week-summary__heading week-summary__heading--third">To czego się dzisiaj nauczyłam...</h2>
+                <h3>Tydzień 4</h3>
+                 
          <p class="week-summary__description">To przede wszystkim nieco więcej o samym front endzie ( czy jak kto woli frontendzie lub front-endzie)
                 od strony teoretycznej, o warstwach, ścieżce rozwoju, czy o znacznikach semantycznych (,które mam
                 nadzieję wkrótce opanuję).
@@ -72,6 +86,7 @@
             </article>
 
             <article class="week-summary">
+                <h3>Tydzień 4</h3>
                 <br>
                 <h2 id="fourth" class="week-summary__heading week-summary__heading--fourth"> A co myślałam,że muszę umieć....</h2>
                 <p class="week-summary__description"> <strong>Myślałam, że powinnam opanować frameworki bo praca na samym css-sie i html jest staroświecka.
