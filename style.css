@@ -29,7 +29,7 @@ h1 {
   color: chartreuse;
 }
 .navigation{
-    background: rgb(54, 84, 139);
+    background: rgb(192, 102, 192);
     padding: 10px;
     border-radius: 5px;
 }
@@ -55,4 +55,10 @@ h1 {
 }
 .week-summary--special{
     border-color: teal;
+}
+.logo{
+  box-sizing: border-box;
+  position: relative;
+  top:7px;
+  left:750px;
 }
