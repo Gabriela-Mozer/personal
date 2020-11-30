@@ -1,8 +1,10 @@
 body {
   background: #fefefe;
+  margin: 10px;
 }
 h2 {
   color: #1460aa;
+  margin:5px;
 }
 /* section{
     border:1px solid #1460AA;
@@ -24,9 +26,9 @@ a {
   color: purple;
 }
 
-
 h1 {
   color: chartreuse;
+  margin:5px;
 }
 .navigation{
     background: rgb(192, 102, 192);
