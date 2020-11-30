@@ -1,9 +1,9 @@
 body {
-  background: #fefefe;
+  background: #F3EEC3;
   margin: 10px;
 }
 h2 {
-  color: #1460aa;
+  color: #B0D0D3;
   margin:5px;
 }
 /* section{
@@ -13,25 +13,23 @@ h2 {
 .third {
   color: hotpink;
 }
-#top {
-  color: rgb(58, 199, 58);
-}
+
 nav a {
   color: cadetblue;
 }
 a {
-  color: rgb(231, 161, 31);
+  color: #F7AF9D;
 }
 #fourth {
-  color: purple;
+  color: #C08497;
 }
 
 h1 {
-  color: chartreuse;
+  color: #F7E3AF;
   margin:5px;
 }
 .navigation{
-    background: rgb(192, 102, 192);
+    background:#C08497 ;
     padding: 10px;
     border-radius: 5px;
 }
@@ -41,26 +39,34 @@ h1 {
     margin:4px;
 }
 .naviagation__link-homepage{
-    background: rgb(16, 66, 66);
+    background: rgb(124, 182, 182);
     color:whitesmoke;
 }
 .week-summary{
     padding:16px;
-    border:1px solid greenyellow;
+    border:1px solid rgb(147, 184, 92);
+    border-radius:5px;
     
 }
 .week-summary__description{
     color:rgb(75, 52, 52);
 }
-.week-summary__title{
-    color:rgb(39, 39, 163);
-}
+
 .week-summary--special{
-    border-color: teal;
+    border-color: rgb(110, 58, 117);
+    border-radius:5px;
 }
 .logo{
   box-sizing: border-box;
   position: relative;
   top:7px;
   left:750px;
+}
+.week-summary__heading--second{
+  color: #afaa78;
+  margin:5px;
+}
+.main-heading{
+  color: #c5b58e;
+  margin:5px;
 }
