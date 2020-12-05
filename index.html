@@ -1,123 +1,252 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-        <header>
-            <nav class="navigation">
-                <a href="https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3" alt="pallette"></a>
-               <a class="naviagation__link naviagation__link-homepage" href="nauka-html.html">Nauka html</a> 
-               <a class="naviagation__link" href="index.html">Index html</a> 
-               <a class="naviagation__link" href="nauka-css.html">Nauka css</a>
-               <img src="projekt-html.png" alt="logo" class="logo" width="150">
-            </nav>
-           
-        </header>  
-    <main>
-        
-        <header>
-            <h1 class="main-heading main-heading--js" id="top">Pierwszy projekt na kursie WTF</h1>
-        </header >
-      
-        <h4 class="extra-element extra-element--js">Kolejny element</h4>
-      
-        <section>
-            <h3> Tydzień 4 </h3>
-            
-            <article class="week-summary week-summary--special">
-                <h2 id="second" class="week-summary__heading week-summary__heading--second">Jakby tu kreatywnie zacząć....</h2>
-            <img src="cloud.png" alt="cloud" width="280">
-            <img src="snowflake.png" alt="snowflake" width="310" height="210">
-           
-            <p class="week-summary__description">Po moich kilku (dziwnych) próbach nauczenia się HTML-a i CSS-a zaczynam od nowa.
-                Myślę, że wiedza, którą posiadałam przed zakupem tego kursu się nieco przydaje, ale nie ukrywam, że jest
-                wiele praktycznych wskazówek,
-                o których nie miałam pojęcia (np. CTRL+SHIFT+P).
-            </p>
-            <p>Wczoraj (25.11) naczyłam się nieco o znaczniku nav i zastosowaniu js. Oprócz tego zapoznałam się z terminalemn 
-                (,który nie wiem jeszcze do czego mi będzie służył) oraz coś o rootach czyli "/"(czego jezcze nie do końca rozumiem).</p>
-            <p> Oprócz tego mówiliśmy o specyficzności i mam nadzieję,że zapamiętam, że najważniejszy jest !important, style,#id, .class i na końcu sam element
-                a także, że w sekcji style pierwszeństwo ma ten element, który jest ,,niżej" w kodzie.
-            </p>
-            <p>Wprawadzam zmianę w ramach gita- znowu :)</p>
-            <p>Co nieco o nazewnictwie:
-                <!-- <ul>
-                    <li>camelCase</li>
-                    <li>kebab-case</li>
-                    <li>snake_case</li>
-                    <li>PascalCase</li>
-                </ul> -->
-            </p>
-            <p> Nauczyłam się dzisiaj nieco o gicie i githubie. By założyć nowy projekt w gicie należy użyć git init.
-                Kolejne  komendy to git config --global user.name"Imie i nazwisko" oraz git config --global user.email adress.
-                Aby śledzić stan projektu używa się git status. Ty stanem projektu jest właśnie commit.Dla dodania zmian należy użyć git add . a żeby zobaczyć historię
-                gitk. Git push wypycha na serwer
-                Natomiast github tworzy nowe repozytorium i można powiedzieć, że pozwala gromadzić pliki i śledzić wprowadzane zmiany.
-                Oprócz tego było nieco więcej o samym divach (nie mają znaczenia semantycznego), displayach, width i height, overflow czy jednostkach.
-                Jeśli chodzi o stylizacje strony to przerobiony został box model  czyli padding border i margin, box sizing, który definiuje wartości wymiarów elementów
-                a także position i z -index oraz dowiedziałam się, że float nie tylko służy do ułożenia elementu względem ekranu na danej stronie ale bardziej do tego,
-                aby zawarty na stronie tekst opływał go z właściwej strony.
-                Poznałam dzisiaj równiej podstawowe zmienne w js(const, let, var) oraz typy proste (string,number,Bigint, boolean,null i undefined).
-                let jest zmienna a const stała.
-                Immutability- oznacza, że nie możemy zmieniać wart prostych w js tylko połączenia między nimi.
-                ip config- sprawdza adres ip w terminalu.
-                BEM- są to logiczne klasy 
-                DOM- Document Object Model czyli złożony w przeglądarce HTML.
-
-            </p>
-            </article>
-            </section>
-
-        <section>
-            <h3>Tydzień 4</h3>
-             <article class="week-summary">
-                 <h2 id="third" class="week-summary__heading week-summary__heading--third">To czego się dzisiaj nauczyłam...</h2>
-                  <br>
-          <p class="week-summary__description">To przede wszystkim nieco więcej o samym front endzie ( czy jak kto woli frontendzie lub front-endzie)
-                od strony teoretycznej, o warstwach, ścieżce rozwoju, czy o znacznikach semantycznych (,które mam
-                nadzieję wkrótce opanuję).
-
-          </p>
-            <br>
-            <p> <b>Muszę pamiętać o validatorze i o pilnowaniu porządku w nowym projekcie</b></p>
-            
-            </article>
-        </section>
-
-        <section> 
-            <h3>Tydzień 4</h3>
-            <article class="week-summary">
-            
-                <br>
-                <h2 id="fourth" class="week-summary__heading week-summary__heading--fourth"> A co myślałam,że muszę umieć....</h2>
-                <p class="week-summary__description"> <strong>Myślałam, że powinnam opanować frameworki bo praca na samym css-sie i html jest staroświecka.
-                    Co gorsza ( lub raczej co głupsza) nie wpadłam na ten pomysł sama tylko ktoś mi to doradził, gdy mi
-                    nie szło próbowałam to usprawiedliwiać tym,
-                    że powinnam uczyć metodą prób i błędów ( co w sumie nie jest samo w sobie złe), ale podstawy przyjdą
-                    do mnie same...</strong></p>
-                <p> To tyle na dzisiaj... myślałam, żeby jeszcze poszaleć i pododawać jakieś obrazki, czy przyciski,
-                    ale będę się trzymała na razie tego co na kursie.
-
-                <p> Zobaczę jak mi pójdzie dziś js i czy validator zaakceptuje moją pracę :)</p>
-            </article>
-       </section>
-        
+  <body>
+    <header class="main-header__nav">
+      <nav class="navigation">
+        <a
+          href="https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3"
+          alt="pallette"
+        ></a>
+        <a
+          class="navigation__link navigation__link-homepage"
+          href="nauka-html.html"
+          >Nauka html</a
+        >
+        <a class="navigation__link" href="index.html">Index html</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
        
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-header">
+        <h1 class="main-heading main-heading--js" id="top">
+          Pierwszy projekt na kursie WTF
+        </h1>
+      </header>
+
+      <h4 class="extra-element extra-element--js"></h4>
+
+      <section class="about">
+        <h3 class="about__header">Tydzień 5</h3>
+
+        <article class="about about__special">
+          <h2 id="second" class="about__heading about__heading--second">
+            Jakby tu kreatywnie zacząć....
+          </h2>
+          <img src="cloud.png" alt="cloud" width="280" />
+          <img src="snowflake.png" alt="snowflake" width="310" height="210" />
+
+          <p class="about__description">
+            Po moich kilku (dziwnych) próbach nauczenia się HTML-a i CSS-a
+            zaczynam od nowa. Myślę, że wiedza, którą posiadałam przed zakupem
+            tego kursu się nieco przydaje, ale nie ukrywam, że jest wiele
+            praktycznych wskazówek, o których nie miałam pojęcia (np.
+            CTRL+SHIFT+P).
+          </p>
+          <p>
+            Wczoraj  naczyłam się nieco o znaczniku nav i zastosowaniu
+            js. Oprócz tego zapoznałam się z terminalemn (,który nie wiem
+            jeszcze do czego mi będzie służył) oraz coś o rootach czyli
+            "/"(czego jezcze nie do końca rozumiem).
+          </p>
+          <p>
+            Oprócz tego mówiliśmy o specyficzności i mam nadzieję,że zapamiętam,
+            że najważniejszy jest !important, style,#id, .class i na końcu sam
+            element a także, że w sekcji style pierwszeństwo ma ten element,
+            który jest ,,niżej" w kodzie.
+          </p>
+          <p>Wprawadzam zmianę w ramach gita- znowu :)</p>
+          <section>
+            <h4>Co nieco o nazewnictwie:</h4>
+            <ul class="list">
+              <li class="list__item">camelCase</li>
+              <li class="list__item">kebab-case</li>
+              <li class="list__item">snake_case</li>
+              <li class="list__item">PascalCase</li>
+            </ul>
+
+            <dl>
+              <dt>div</dt>
+              <dd>Opis mojego diva</dd>
+
+              <dt>article</dt>
+              <dd>Opis mojego article</dd>
+            </dl>
+          </section>
+
+          <section>
+            <h4>Tabela</h4>
+            <table class="table">
+              <caption>
+                Próbny spis
+              </caption>
+              <thead>
+                <tr>
+                  <th>Treść kolumny 1</th>
+                  <th>Treść kolumny 2</th>
+                  <th>Treść kolumny 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3 Jakiś dłuższy tekst, żeby był</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h4>Kroki do stworzenia dobrego html-a:</h4>
+            <ol>
+              <li>Przeanalizuj treść</li>
+              <li>Podziel na sekcje</li>
+              <li>Utwórz pierwszą wersję kodu</li>
+            </ol>
+          </section>
+
+          <p>
+            Nauczyłam się dzisiaj nieco o gicie i githubie. By założyć nowy
+            projekt w gicie należy użyć git init. Kolejne komendy to git config
+            --global user.name"Imie i nazwisko" oraz git config --global
+            user.email adress. Aby śledzić stan projektu używa się git status.
+            Ty stanem projektu jest właśnie commit.Dla dodania zmian należy użyć
+            git add . a żeby zobaczyć historię gitk. Git push wypycha na serwer
+            Natomiast github tworzy nowe repozytorium i można powiedzieć, że
+            pozwala gromadzić pliki i śledzić wprowadzane zmiany. Oprócz tego
+            było nieco więcej o samym divach (nie mają znaczenia semantycznego),
+            displayach, width i height, overflow czy jednostkach. Jeśli chodzi o
+            stylizacje strony to przerobiony został box model czyli padding
+            border i margin, box sizing, który definiuje wartości wymiarów
+            elementów a także position i z -index oraz dowiedziałam się, że
+            float nie tylko służy do ułożenia elementu względem ekranu na danej
+            stronie ale bardziej do tego, aby zawarty na stronie tekst opływał
+            go z właściwej strony. Poznałam dzisiaj równiej podstawowe zmienne w
+            js(const, let, var) oraz typy proste (string,number,Bigint,
+            boolean,null i undefined). let jest zmienna a const stała.
+            Immutability- oznacza, że nie możemy zmieniać wart prostych w js
+            tylko połączenia między nimi. ip config- sprawdza adres ip w
+            terminalu. BEM- są to logiczne klasy DOM- Document Object Model
+            czyli złożony w przeglądarce HTML.
+          </p>
+          <p>
+            W tygodniu 5 było o dziedziczeniu- czyli o tym,że style mogą być
+            nadawane automatycznie przez przeglądarkę, lub dziedziczyć od
+            "rodziców" jeśli ich styl nie został zdefiniowany. Wartość inherit-
+            definiuje, że wartość ma być dziedziczona od wartości elementu wyżej
+            (np. rodzica). Dowiedziałam się również o kolejnych funkcjach i
+            działaniu JS oraz z czego się składa (deklaracja, parametr,słowo
+            klucz, wynik).Niemutowalność to brak możliwości zmianny zmiennej.
+            Funkcje zawsze coś zwracają - nawet jeśli jest to undefined.Funkcje
+            są dla zastosowania DRY(don't repeat yourself), zwiększają
+            czytelnośc kodu i pozwalają na łatwiejsze wykrywanie błędów. FAT
+            arrow funkcion (=>) skraca zapis deklaracji,zwiększa
+            czytelność(taa...), nie tworzy nowego kontekstu, nie jest
+            zamiennikiem tradycyjnej funkcji. Prawie wszystko w JS jet
+            obietktem- strukturą danych.Zmienne to własności a funkcje to metody
+            i wywołuemy je przez nazwę obiektu. Immutability w obiektach- nie
+            możemy zmienić wartości ale, możemy zmienć połączenia. Zatem
+            mutowanie opiera się na połączeniach a nie na wartościach. W tym
+            tygodniu była również mowa o debuggingu- czyli procedurze usuwania
+            błędów. Omówione też zostały Listy, tabele i definicje czyli ul, li
+            i ol zagnieżdżanie list dl, dt, dd. table pozwala tworzyć tabelę: tr
+            to wiersz, td komórka, thead- nagłówek, tbody-"ciało" tabeli i
+            caption czyli opis. Był to nieco luźniejszy temat, z którego
+            zapamiętać należy tyle, że budujemy layotów na bazie tabel. Kolejnym
+            zagadnieniem była Normalizacja oraz reset.Restet - służy wyłączaniu
+            domyślnych stylów. Natomiast normalizacja za pomocą dodatkowo
+            przypiętego normalize.css sprawia, że strona jest ostylowana przez
+            domyślne style przeglądarki. No i nadeszła pora na flexbox i jest
+            tego naprawdę sporo : display-flex, wrap,flow, justify-content,
+            align-content,align-items,align-self, order,flex-grow,
+            flex-shrink,flex-basis. No sporo tego ale myślę, że w swoim czasie
+            załapię :) Było też o tłach i ich pozycjonowaniu, wielkości i
+            kolorach i rzecz, która mnie ucieszyła najbardziej: gradienty. Na
+            koniec była Figma, i muszę przyznać, że była to chyba
+            najprzyjemniejsza część tego tygodnia, nie tylko dlatego, że grafik
+            dezajn is maj paszyn, ale także ze względu na to, że wiele z tego
+            było intuicyjne. Mam nadzieję, że jeszcze kiedyś do tego wrócę, żeby
+            opanować to lepiej :)
+          </p>
+          <p class="extra-paragraph--js"></p>
+        </article>
+      </section>
+
+      <section class="week">
+        <h3>Tydzień 5</h3>
+        <article class="week-summary">
+          <h2
+            id="third"
+            class="week-summary__heading week-summary__heading--third"
+          >
+            To czego się dzisiaj nauczyłam...
+          </h2>
+          <br />
+          <p class="week-summary__description">
+            To przede wszystkim nieco więcej o samym front endzie ( czy jak kto
+            woli frontendzie lub front-endzie) od strony teoretycznej, o
+            warstwach, ścieżce rozwoju, czy o znacznikach semantycznych (,które
+            mam nadzieję wkrótce opanuję).
+          </p>
+          <br />
+          <p>
+            <b
+              >Muszę pamiętać o validatorze i o pilnowaniu porządku w nowym
+              projekcie</b
+            >
+          </p>
+        </article>
+      </section>
+
+      <section class="week-summary__second">
+        <h3>Tydzień 5</h3>
+        <article class="week-summary">
+          <br />
+          <h2
+            id="fourth"
+            class="week-summary__heading week-summary__heading--fourth"
+          >
+            A co myślałam,że muszę umieć....
+          </h2>
+          <p class="week-summary__description">
+            <strong
+              >Myślałam, że powinnam opanować frameworki bo praca na samym
+              css-sie i html jest staroświecka. Co gorsza ( lub raczej co
+              głupsza) nie wpadłam na ten pomysł sama tylko ktoś mi to doradził,
+              gdy mi nie szło próbowałam to usprawiedliwiać tym, że powinnam
+              uczyć metodą prób i błędów ( co w sumie nie jest samo w sobie
+              złe), ale podstawy przyjdą do mnie same...</strong
+            >
+          </p>
+          <p>
+            To tyle na dzisiaj... myślałam, żeby jeszcze poszaleć i pododawać
+            jakieś obrazki, czy przyciski, ale będę się trzymała na razie tego
+            co na kursie.
+          </p>
+
+          <p>
+            Zobaczę jak mi pójdzie dziś js i czy validator zaakceptuje moją
+            pracę :)
+          </p>
+        </article>
+      </section>
     </main>
 
-        <footer>To moja własna strona &copy; 2020
-            <a href="#top">Wróć na górę</a>
-            <a href="#second">Wróć do nagłówka nr 2</a>
-            <a href="#third">Wróć do nagłówka nr 3</a>
-            <a href="#fourth">Wróć do nagłówka nr 4</a>
-        </footer>
-        <script src="main.js"></script>
-</body>
-
+    <footer class="footer">
+      To moja własna strona &copy; 2020
+      <a href="#top">Wróć na górę</a>
+      <a href="#second">Wróć do nagłówka nr 2</a>
+      <a href="#third">Wróć do nagłówka nr 3</a>
+      <a href="#fourth">Wróć do nagłówka nr 4</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
