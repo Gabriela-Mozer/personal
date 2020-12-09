@@ -22,7 +22,6 @@
         >
         <a class="navigation__link" href="index.html">Index html</a>
         <a class="navigation__link" href="nauka-css.html">Nauka css</a>
-       
       </nav>
     </header>
     <main class="main">
@@ -30,12 +29,13 @@
         <h1 class="main-heading main-heading--js" id="top">
           Pierwszy projekt na kursie WTF
         </h1>
+        <button class="main action--js">Zmień nagłówek</button>
       </header>
 
       <h4 class="extra-element extra-element--js"></h4>
 
       <section class="about">
-        <h3 class="about__header">Tydzień 5</h3>
+        <h3 class="about__header">Tydzień 6</h3>
 
         <article class="about about__special">
           <h2 id="second" class="about__heading about__heading--second">
@@ -52,10 +52,10 @@
             CTRL+SHIFT+P).
           </p>
           <p>
-            Wczoraj  naczyłam się nieco o znaczniku nav i zastosowaniu
-            js. Oprócz tego zapoznałam się z terminalemn (,który nie wiem
-            jeszcze do czego mi będzie służył) oraz coś o rootach czyli
-            "/"(czego jezcze nie do końca rozumiem).
+            Wczoraj naczyłam się nieco o znaczniku nav i zastosowaniu js. Oprócz
+            tego zapoznałam się z terminalemn (,który nie wiem jeszcze do czego
+            mi będzie służył) oraz coś o rootach czyli "/"(czego jezcze nie do
+            końca rozumiem).
           </p>
           <p>
             Oprócz tego mówiliśmy o specyficzności i mam nadzieję,że zapamiętam,
@@ -176,12 +176,81 @@
             było intuicyjne. Mam nadzieję, że jeszcze kiedyś do tego wrócę, żeby
             opanować to lepiej :)
           </p>
+          <p>
+            W tygodniu 6 mowa była o logice w JS oraz o tym, że porównania to
+            wyrażenia logiczne. Najważniejsze co powinnam z tego wynieść: to
+            zapisy >, >=, =, !=,!==(dla typeof), że false przyjmuje 6 wartości :
+            0,'', false, null,undefined, NaN (not a number). O warunku'if',
+            która obsługuje true i false i łączenie zdan za pomocą && (and) i ||
+            (or). Wartość wyrażenia można również "odwrócić" za pomocą if np.:
+            !false == true. Do tego można dodać dodatkowy warunek else, który
+            wyświetla inną wartość jeśli pierwsza if nie spełni postawionego
+            warunku. Istnieje też możliwość else if do stworzenia zupełnie
+            nowego warunku. Switch z kolei jest instrukcją, która pozwala na
+            sprawdzanie różnych warunków w jednym zapisie np: const myNumber=6
+            switch (myNumber){ case 7: console.log('hi 7'); break; case 9:
+            console.log('hi 9'); break; default: console.log('hi another
+            number'); } Ponadto jest jeszcze zapis skrócony
+            (zmienna1>zmienna2)?console.log ('true') console.log('false'). Z
+            HTML-owych rzeczy były formularze, inputy i labele. form to element
+            blokowy, który pozwala wygenerować coś co pozwala na wygenerowanie
+            skrzynki, której możemy stawaić inputy (opakowane w p), w miejscu
+            name piszemy nazwePola , należy też podać idPola (często o tej zamej
+            nazwie co name). Label jest opisem do tego pola i należy dołączyć
+            'labelfor= idInput'.Innymi atrybutami imputa są value, placeholder
+            (tekst podpowiedzi). Fieldset tworzy grupę pól, a legend opis.
+            Kolejnymi atrybutami inputa są : type :'radio'- przyciski do
+            wybierania w kształcie kropek i type="checkbox"- przyciski w
+            kształcie kwadratu.Można także dodsć strybut bez nazwy checked,
+            który zaznacza atrybuty radio i checkbox. Z innych często
+            spotykanych na stronie typów są "number", "password", "email",
+            "tel","range"(czyli taki fajny suwak , któremu trzba nadać wartości
+            min, max i step), "file"(,który przegląda pliki). Select można
+            używać zamiast inputa a option , daje nam możliwość wyboru opcji z
+            listy rozwijanej. Textarea jest ciekawym znacznikiem bo daje
+            możliwość wpisania tekstu wraz ze tabulatorami. Formularze mogą być
+            mogą być również przyjmowane i wysyłane. Domyślą wartością jest get
+            ale można nadać metodę "post".
+          </p>
+          <p style="color: red">
+            [Dobra nie do końca rozumiem o co chodziło tutaj]
+          </p>
+          <p>
+            Ostatnią rzeczą związaną z formularzami była ich walidacja czyli
+            sprawdzenie poprawności danych w formularzu. required - to wymagane
+            pole do wypełnienia w inpucie. pattern="[a-zA-ZO-9]+" to wyrażenie
+            regularne pomagające wykryć ciąg znaków.
+          </p>
+          <p style="color: red">
+            [Dobra tutaj też nie do końca rozumiem o co chodziło tutaj]
+          </p>
+          <p>
+            Następnie była mowa o gridach, czyli odpowiedzi, na którą długo
+            czekałam: jak uzyskać responzywność bez bootstrapa (czy innych
+            frameworków) grid line,grid track(column), grid track(row), grid
+            cell i grid area (to rozmieszczenie w gridzie), który zawiera
+            numeracje od 1-6 i pozwala na budowanie layotów. Najbardziej
+            podstawowym layotem jest taki, który zawiera :header, article,aside
+            i footer. W CSS-ie aby uruchomić grid używamy display: grid (np. dla
+            sekcji main). grid-template-columns, i grid-template-rows, definiują
+            liczbę kolumn i wierszy. Nowo poznaną wartością jest fr- , który
+            oznacza ułamek jakiejś wielkości (np wiersza).Można też określać
+            powtarzalność dla kolumn czy wierszy dzięki repeat(ileRazy, wartość)
+            column-gap - przerwy między kolumnami. minmax(wart.min, wart.max).
+            aside- reprezentuje treść boczną grid item- odnosi się do zawartości
+            gridu. aby nadać grid w jakiejś sekcji należy podać to miejsce i
+            użyc grid-area:'nazwa miejsca' np: .footer{ grid-area:footer; }
+            grid-template-areas-odpowiada za istnienie i rozmieszczanie
+            elementów ... mogłabym powiedzieć o gridzie więcej ale, już trochę
+            tego dużo, więc powiem tylko na zakończenie, że grid nie zastępuje
+            flexboxa.
+          </p>
           <p class="extra-paragraph--js"></p>
         </article>
       </section>
 
       <section class="week">
-        <h3>Tydzień 5</h3>
+        <h3>Tydzień 6</h3>
         <article class="week-summary">
           <h2
             id="third"
@@ -196,6 +265,15 @@
             warstwach, ścieżce rozwoju, czy o znacznikach semantycznych (,które
             mam nadzieję wkrótce opanuję).
           </p>
+          <p>
+            Będę dzisiaj się zwierzać... mianowicie nie twierdzę, że miałobyć
+            lekko, ale nie sądziłam, że będzie tak intensywnie i mam wrażenie,
+            że nie jestem w stanie zapamiętć wszystkiego... Może rzeczywiście
+            trzeba zabierać się za zabawę w naukę programowania przy dobrym
+            nastawieniu. Boję się, że nie wyniosę wszystkiego co wartościowe z
+            tych modułów, nawet jeśli do nich potem wróce to wszystko mi się
+            pomiesza.
+          </p>
           <br />
           <p>
             <b
@@ -207,7 +285,7 @@
       </section>
 
       <section class="week-summary__second">
-        <h3>Tydzień 5</h3>
+        <h3>Tydzień 6</h3>
         <article class="week-summary">
           <br />
           <h2

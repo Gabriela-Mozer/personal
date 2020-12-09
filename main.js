@@ -6,8 +6,8 @@ console.log(`Heja, nazywam się ${firstName} i mam ${age} lata`);
 
 alert("Witam w moim pierwszym projekcie WTF");
 
-const heading = document.querySelector('.main-heading--js');
-console.log(heading);
+// const heading = document.querySelector('.main-heading--js');
+// console.log(heading);
 
 const element = document.querySelector('.extra-element--js');
 element.innerHTML =`Inna wartość`;
@@ -77,9 +77,55 @@ console.log(humanTwo);
  humanOne.age = 35;
  console.log(humanTwo);
  console.log(humanOne);
-// {
-//     name:'Stefan',
-//     age:32,
-// }
-// humanTwo.age=35;
-// console.log(humanTwo);
+
+ if(2 !=='2'){
+     console.log('Java to nie JavaScript');
+ }
+
+ if(humanOne.age>humanTwo.age){
+     console.log('HumanOne jest starszy');
+ }
+ if(humanOne.age<humanTwo.age){
+    console.log('HumanTwo jest starszy');
+}
+
+if((humanOne.age!==35) && humanTwo.age===32){
+    console.log('To się wykona');
+   }   else if(humanOne.age>humanTwo.age) {
+        console.log('To się wykonało przy użyciu else if');
+    }
+
+if((humanOne.age===35) || humanTwo.pet){
+    console.log('i się wykonało');
+}
+
+const myNumber=6
+
+switch (myNumber){
+    case 7:
+    console.log('hi 7');
+    break;
+    case 9:
+        console.log('hi 9');
+    break;
+    default:
+        console.log('hi another number');  
+}
+
+
+const button=document.querySelector('.action--js');
+console.log(button)
+
+const myClick = () => {
+    const heading = document.querySelector('.main-heading--js');
+    heading.innerHTML="Witam ponownie";
+    // console.log(heading);
+   
+}
+
+// button.addEventListener('click', myClick);
+
+
+button.addEventListener('click', (e) =>{
+    console.log(e);
+});
