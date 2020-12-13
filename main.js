@@ -118,7 +118,7 @@ console.log(button)
 
 const myClick = () => {
     const heading = document.querySelector('.main-heading--js');
-    heading.innerHTML="Witam ponownie";
+    // heading.innerHTML="Witam ponownie";
     // console.log(heading);
    
 }
@@ -127,5 +127,16 @@ const myClick = () => {
 
 
 button.addEventListener('click', (e) =>{
+    const heading = document.querySelector('.main-heading--js');
     console.log(e);
+    heading.innerHTML="Witam ponownie";
+    console.log(heading.classList.contains('main-heading--js'));
+    // heading.classList.toggle('klasa-z-js');
+});
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', ()=> {
+    const nav= document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
 });

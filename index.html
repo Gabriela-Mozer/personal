@@ -10,7 +10,8 @@
 
   <body>
     <header class="main-header__nav">
-      <nav class="navigation">
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">&#127828;</button>
+      <nav class="navigation navigation--js">
         <a
           href="https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3"
           alt="pallette"
@@ -22,7 +23,10 @@
         >
         <a class="navigation__link" href="index.html">Index html</a>
         <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="index.html">Index html</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
       </nav>
+      
     </header>
     <main class="main">
       <header class="main-header">
@@ -41,8 +45,8 @@
           <h2 id="second" class="about__heading about__heading--second">
             Jakby tu kreatywnie zacząć....
           </h2>
-          <img src="cloud.png" alt="cloud" width="280" />
-          <img src="snowflake.png" alt="snowflake" width="310" height="210" />
+          <img class="about-picture" src="cloud.png" alt="cloud" width="280" />
+          <!-- <img class="about-picture" src="snowflake.png" alt="snowflake" width="310" /> -->
 
           <p class="about__description">
             Po moich kilku (dziwnych) próbach nauczenia się HTML-a i CSS-a
@@ -83,9 +87,17 @@
           </section>
 
           <section>
+            <div class="grid">
+              <div class="grid-item">Gridowa tabela </div>
+              <div class="grid-item">1</div>
+              <div class="grid-item">2</div>
+              <div class="grid-item">3</div>
+              <div class="grid-item">4</div>
+              <div class="grid-item">5</div>
+            </div> 
             <h4>Tabela</h4>
             <table class="table">
-              <caption>
+              <caption class="grid-element_1">
                 Próbny spis
               </caption>
               <thead>
@@ -103,6 +115,7 @@
                 </tr>
               </tbody>
             </table>
+           
           </section>
           <section>
             <h4>Kroki do stworzenia dobrego html-a:</h4>
@@ -244,6 +257,14 @@
             elementów ... mogłabym powiedzieć o gridzie więcej ale, już trochę
             tego dużo, więc powiem tylko na zakończenie, że grid nie zastępuje
             flexboxa.
+            Ostatnią lekcją jest przepis na hamburgera:
+            <li>Nawigacja</li>
+            <li>Style do nawigacji na mobile</li>
+            <li>Style do nawigacji na desktop</li>
+            <li>Przycisk do pokazaywania/ukrywania (zmiana klasy) </li>
+            <li>Kod js do podpięcia się pod przycisk</li>
+            <li>Kod js do zmiany klasy</li>
+            Do tego posłuży nam kod w js element.classList,  który przyjmuje wartości add, remove, toggle, contains
           </p>
           <p class="extra-paragraph--js"></p>
         </article>
