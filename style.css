@@ -9,6 +9,7 @@ body {
   background: linear-gradient(90deg, rgba(251,236,63,1) 0%, rgba(155,70,252,0.7539390756302521) 100%);
   /* margin: 10px; */
   background-attachment: fixed;
+  margin: 2px;
 }
 h2 {
   color: #79a6aa;
@@ -55,8 +56,18 @@ a {
     color: rgb(133, 126, 30);
     display: block;
     margin: 0 0 16px; 
-    
-}
+    }
+  .navigation__link:hover{
+    color:rgb(202, 194, 74);
+    font-weight: bold;
+  }
+  .navigation__link:visited{
+    color:silver;
+    font-weight: bold;
+  }
+  .navigation__link:focus{
+    border:3px solid rgb(136, 61, 136);
+  }
 .navigation__link-homepage{
     background: rgb(124, 182, 182);
     color:whitesmoke;
@@ -78,6 +89,9 @@ a {
     padding:16px;
     width:100%;
 }
+.about:not(.about__special){
+  background:plum;
+}
 
 .about{
   width:100%;
@@ -91,11 +105,11 @@ a {
   max-width:1000px;
   /* margin:50px; */
   margin:auto;
-  display:grid;
-  grid-template-areas:"header header"
+  /* display:grid;
+  grid-template-areas:
   "main section"
   "footer";
-  grid-template-columns:2fr 350px;
+  grid-template-columns:repeat(3, 1fr); */
   
 }
 
@@ -113,6 +127,16 @@ a {
   padding:16px;
   /* position: relative;
   right:-10px; */
+}
+.week-summary__heading::before{
+  content:"";
+  display:block;
+  width:20px;
+  height:20px;
+  background:cadetblue;
+}
+.main-heading--js::after{
+  content:"Goodbye";
 }
 .footer{
   width:100%;
@@ -155,10 +179,50 @@ background: orange;
 .grid-item{
   background: rgb(118, 118, 216);
 }
+.playground{
+  position:absolute;
+  left:350px;
+  /* display: flex; */
+  padding:45px; 
+   justify-content: center;
+  align-items: center;
+}
+form input{
+  width:100%;
+}
+.playground, h1{
+  display: block;
+  justify-content: center;
+}
+
+ label{
+  display:inline-block;
+  padding: 10px;
+}
+form textarea{
+  width: 100%;
+  height: 300px;
+}
+
+fieldset{
+  display:flex;
+  flex-direction: column;
+  padding:20px;
+}
+
+.about:last-child{
+  background:rgba(66, 15, 66, 0.664);}
+
+
 @media (min-width:768px){
   .hamburger{
     display:none;
   }
+  .grid-article{
+  display:grid;
+  grid-template-columns: 1fr 1fr ;
+  column-gap:16px;
+}
   .navigation{
     background:#5c2d3c;
     padding: 16px;

@@ -7,7 +7,9 @@
     <title>Nauka html</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
+  
 </head>
+
 
 <body>
     <header>
@@ -25,6 +27,85 @@
             <img src="cloud.png" alt="cloud" width="280">
             <img src="snowflake.png" alt="snowflake" width="310" height="210">
         </section>
+
+        <main class="playground">
+            <h1>Forms playground</h1>
+            <form>
+                <p>
+                <label for="firstName">Name:</label>
+                <input type="text" value="value" placeholder="Enter your name" name="firstName" id="firstName">
+            </p>
+            <p>
+                <label>Last Name:
+                <input name="lastName" placeholder="Enter your last name" id="lastName">
+                </label>
+            </p>
+            <fieldset>
+                <legend>Adress</legend>
+                <label>Steet name:
+                    <input type="text"  placeholder="Enter street name" name="streetName" id="streetName">
+               </label>
+               
+                <label>City: 
+                    <input type="text"  placeholder="Enter your City" name="cityName" id="cityName">
+               </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favourite show</legend>
+                <p><label><input name="NetflixShow"type="radio" checked value="stranger"> Stranger things</p></label>
+                <p><label><input name="NetflixShow"type="radio" value="Bojack"> Bojack Horseman</p></label>
+                <p><label><input name="NetflixShow"type="radio" value="RnM"> Rick and Morty</p></label>
+            </fieldset>
+            <p>
+                <label>Fav Number:
+                <input name="number" type="number"placeholder="Enter your no" id="number">
+                </label>
+            </p>
+            <p>
+                <label>Tel. Number:
+                <input name="tel" type="tel"placeholder="Enter your tel.no" id="tel">
+                </label>
+            </p>
+            <p>
+                <label>Email:
+                <input name="email" type="email"placeholder="Enter your e-mail" id="email">
+                </label>
+            </p>
+            <p>
+                <label>Range:
+                <input class="range range--js" name="range" type="range" min="0" max="10" step="1"id="range">
+                </label>
+            </p>
+            <p>
+                <label>Password:
+                <input  name="password" type="password" placeholder="Enter your password" id="password">
+                </label>
+            </p>
+            <p>
+                <label for="yourOpinion">Your Opinion:</label>
+                <textarea id="yourOpinion" name="yourOpinion">Love it :)</textarea>
+                
+            </p>
+            <p>
+                <label for="picking">Pick one:</label>
+                <select name="picking" id="picking">
+                    <option value="pill_1">Red pill</option>
+                    <option value="pill_2">Purple pill</option>
+                    <option value="pill_3">Blue pill</option>
+                </select>  
+            </p>
+            <p>
+                <label>Avatar:
+                <input  name="file" type="file" id="file">
+                </label>
+            </p>
+            <p> 
+                <input  name="submit" type="Submit" id="submit">
+               
+            </p>
+            </form>
+        </main>
         
         <footer>To moja własna strona &copy; 2020</footer>
     </main>
