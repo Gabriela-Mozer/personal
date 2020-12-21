@@ -8,7 +8,7 @@
     "cowsay": "^1.4.0"
   },
   "devDependencies": {
-    
+    "node-sass": "^5.0.0"
   },
   "scripts": {
     "cow": "cowsay -s elo!",
@@ -24,6 +24,5 @@
   "bugs": {
     "url": "https://github.com/Gabriela-Mozer/personal/issues"
   },
-  "homepage": "https://github.com/Gabriela-Mozer/personal#readme",
-  "description": ""
+  "homepage": "https://github.com/Gabriela-Mozer/personal#readme"
 }

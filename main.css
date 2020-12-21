@@ -1,5 +1,22 @@
 .test {
-  color: cadetblue;
-  font-size: 40px;
-  background:rgb(94, 36, 94);
- }
+  width: 200px;
+  height: 150px; }
+  .test__title {
+    color: cadetblue; }
+
+.navigation {
+  background: #5c2d3c;
+  padding: 16px;
+  display: none;
+  justify-content: center;
+  flex-shrink: 2;
+  margin-top: 10px; }
+  .navigation__open {
+    display: block; }
+
+.main-heading {
+  color: #968864;
+  margin-top: 60px;
+  padding: 16px; }
+  .main-heading--js__2 {
+    color: rgba(70, 41, 104, 0.671); }

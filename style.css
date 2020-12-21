@@ -1,3 +1,4 @@
+
 html{
   box-sizing:border-box;
 }
@@ -135,8 +136,20 @@ a {
   height:20px;
   background:cadetblue;
 }
+.main-heading--js::before{
+  content:"";
+  display: inline-block;
+  width:30px;
+  height:30px;
+  background:rgb(70, 34, 70);
+}
+
 .main-heading--js::after{
-  content:"Goodbye";
+  content:"";
+  display: inline-block;
+  width:30px;
+  height:30px;
+  background:rgb(70, 34, 70);
 }
 .footer{
   width:100%;
