@@ -24,3 +24,16 @@
         color:rgba(70, 41, 104, 0.671);
     }
   }
+  .week-summary{
+    padding:16px;
+    border:1px solid rgb(147, 184, 92);
+    border-radius:5px;
+    width:100%;
+     &___heading::before{
+        content:"";
+        display:block;
+        width:20px;
+        height:20px;
+        background:cadetblue;
+      }
+    }

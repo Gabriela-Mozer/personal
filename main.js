@@ -1,3 +1,7 @@
+import { hello } from './hello.js';
+
+console.log(hello('Gabi'));
+
 const firstName = "Gabriela";
 const age = 22;
 console.log(firstName);
@@ -140,4 +144,5 @@ hamburger.addEventListener('click', ()=> {
     const nav= document.querySelector('.navigation--js');
     nav.classList.toggle('navigation--open');
 });
+
 
