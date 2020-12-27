@@ -37,3 +37,28 @@
         background:cadetblue;
       }
     }
+    .about{
+      width:100%;
+      &__description{
+         color:rgb(75, 52, 52);
+      }
+      &__special{
+         border: 1px solid;
+         border-color: rgb(110, 58, 117);
+         border-radius:5px;
+         padding:16px;
+         width:100%;
+      }
+      &:not(.about__special){
+        background:plum;
+      }
+      &__heading--second{
+        color: #afaa78;
+        margin:5px;
+      }
+      &-picture{
+        display: inline-block;
+        max-width: 100%;
+      }
+    }
+   
